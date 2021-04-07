@@ -100,7 +100,7 @@ function keyPressed(){
 }
 
  async function getbackgroundimg(){
-  var response=await fetch("http://worldtimeapi.org/api/timezone/america/toronto")
+  var response=await fetch("https://worldtimeapi.org/api/timezone/america/toronto")
   var responsejson=await response.json()
   var dt=responsejson.datetime; 
   var hr= dt.slice(11,13);
